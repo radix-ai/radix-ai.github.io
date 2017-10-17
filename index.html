@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Radix.ai</title>
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.min.css">
+
+        <style>
+            html {
+                color: #ddd;
+                background: #111;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1vw;
+                line-height: 1.5;
+            }
+            body {
+                height: 100vh;
+                display: flex;
+                text-align: center;
+                position: relative;
+            }
+            #hero {
+                pointer-events: none;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            #hero h1 {
+                font-family: 'Abel', sans-serif;
+                font-size: 8em;
+                font-variant: small-caps;
+                letter-spacing: 0.5em;
+                text-indent: 0.5em;
+                margin: 0;
+            }
+            #hero p {
+                font-family: 'VT323';
+                opacity: 0.5;
+                font-size: 3.5em;
+                margin: 0;
+            }
+        </style>
+
+    </head>
+    <body id="particles-js">
+
+        <div id="hero">
+            <h1>radix.ai</h1>
+            <p>A machine learning company</p>
+        </div>
+
+        <script>
+            WebFontConfig = { google: { families: ['Open Sans:300,500', 'Abel:400', 'VT323:400'] } };
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/webfontloader/webfontloader.min.js" async></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/particles.js/particles.min.js"></script>
+        <script>
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 48,
+                        "density": {
+                            "enable": true,
+                            "value_area": 512
+                        }
+                    },
+                    "color": {
+                        "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+                    },
+                    "opacity": {
+                        "value": 0.4,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.15,
+                            "sync": true
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": false,
+                        "anim": {
+                            "enable": true,
+                            "speed": 2,
+                            "size_min": 0.15,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 160,
+                        "color": "#33b1f8",
+                        "opacity": 0.15,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 1.5,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "bubble"
+                        },
+                        "onclick": {
+                            "enable": false,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "bubble": {
+                            "distance": 200,
+                            "size": 6,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        </script>
+
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-108277215-1','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+    </body>
+</html>
