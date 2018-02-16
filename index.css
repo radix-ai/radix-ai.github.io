@@ -1,0 +1,270 @@
+/* Base */
+
+html {
+    color: #212121;
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+body {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+section > .container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 3rem;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+a, button, label {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+a {
+    color: #06f;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Logo */
+
+.logo {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #06f;
+    font-size: 1.08em;
+}
+.logo > span {
+    font-weight: 200;
+}
+
+/* Call to action */
+
+#c2a-contact, #c2a-positions {
+    text-align: center;
+}
+
+/* Button */
+
+a.button {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px 0 rgba(0, 0, 0, 0.1);
+    padding: .7em 1.1em;
+    font-weight: 600;
+    transition: box-shadow 0.1s ease;
+    text-transform: uppercase;
+}
+a.button:hover {
+    text-decoration: none;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.18); 
+}
+a.button.dark {
+    color: white;
+    background-color: #06f;
+}
+
+/* Glimmer effect */
+
+.glimmer {
+    position: relative;
+}
+.glimmer:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 58% 42%;
+    background-size: 500% 500%;
+    transition: all 0s ease;
+    background-image: -webkit-linear-gradient(
+        bottom left,
+        rgba(255, 255, 255, 0.0) 35%,
+        rgba(255, 255, 255, 0.9) 42%,
+        rgba(255, 255, 255, 0.9) 45%,
+        rgba(255, 255, 255, 0.0) 47%
+    );
+    background-image: linear-gradient(
+        bottom left,
+        rgba(255, 255, 255, 0.0) 35%,
+        rgba(255, 255, 255, 0.9) 42%,
+        rgba(255, 255, 255, 0.9) 45%,
+        rgba(255, 255, 255, 0.0) 47%
+    );
+}
+.glimmer:hover:after {
+    background-position: 19% 81%;
+    -webkit-transition-duration: .4s;
+            transition-duration: .4s;
+}
+
+/* Sections */
+
+section {
+    margin: 6rem 0;
+    padding: 1vw 0;
+}
+section > .container > *:not(:first-child) {
+    margin-top: 6rem;
+    padding-top: 1vw 0;
+}
+section .title {
+    display: flex;
+    align-items: center;
+}
+section h1 {
+    display: inline-block;
+    font-size: 3.2rem;
+    font-weight: 300;
+    opacity: 0.12;
+    margin-right: 0.5em;
+}
+section h1 + hr {
+    display: inline-block;
+    flex-grow: 1;
+    height: 1px;
+    position: relative;
+    top: 2px;
+    background: rgba(0, 0, 0, 0.07);
+    border: none;
+}
+
+/* Hero */
+
+#hero {
+    margin: 8vw 0 4vw 0;
+    padding: 6rem 0 2rem 0;
+    text-align: center;
+}
+#hero .logo { font-size: 7.5rem; line-height: 1 }
+#hero .logo:hover { text-decoration: none; }
+#hero nav a { font-size: 2.2rem; }
+#tagline p { font-size: 3.2rem; }
+#tagline {
+    margin-top: 4vw 0;
+    padding-top: 0;
+}
+
+/* Team */
+
+#team .people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#team .people .person {
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    margin: 3rem 3%;
+}
+@media screen and (min-width: 850px) {
+    #team .people .person {
+        width: 34rem;
+    }
+}
+#team .people .person .photo {
+    margin-right: 2rem;
+    width: 91px;
+    height: 91px;
+    line-height: 90px;
+    flex-shrink: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#team .people .person .name span {
+    display: block;
+}
+#team .people .person .name span a { color: rgba(0, 0, 0, 0.2); }
+#team .people .person .name span a:first-child i.fa { font-size: 0.85em; margin-right: 0.3rem; }
+#team .people .person .name span a:hover { color: #06f; }
+#team .people .person .name span:nth-child(2) {
+    color: rgba(0, 0, 0, 0.5);
+}
+.davio { background: url('img/davio.jpg'); }
+.florian { background: url('img/florian.jpg'); }
+.laurent { background: url('img/laurent.png'); }
+.thibault { background: url('img/thibault.jpg'); }
+.you { background: #ccc; color: white; }
+
+/* Open positions */
+
+.job {
+    text-align: left;
+    position: relative;
+}
+.job.hide {
+    max-height: 14em;
+    overflow: hidden;
+}
+.job.hide::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5em;
+    background: #fff;
+    background: -moz-linear-gradient(top, #fff 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(top, #fff 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, #fff 100%);
+}
+.job h1 {
+    opacity: 0.9;
+}
+.job h1 a.button {
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.5rem;
+    margin-left: 1rem;
+}
+.job h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.job h2:not(:first-child) {
+    margin-top: 1.5em;
+}
+.job p {
+    margin-top: 0.5em
+}
+
+/* Contact */
+
+#contact .coordinates {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#contact .coordinates p:first-child {
+    margin-bottom: 2em;
+    /* border: 1px solid green; */
+}
+#contact .coordinates p:first-child a {
+    display: block;
+}
+#contact .coordinates p:first-child a i {
+    padding-right: 0.25em;
+}
+#contact .coordinates p:first-child a:first-child i {
+    font-size: 0.85em;
+    margin-left: 0.15em;
+    margin-right: 0.15em;
+}
