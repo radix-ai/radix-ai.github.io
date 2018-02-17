@@ -113,9 +113,11 @@ a.button.dark {
 
 section {
     margin: 7rem 0;
+    padding: 1vw 0;
 }
 section > .container > *:not(:first-child) {
     margin-top: 7rem;
+    padding-top: 1vw;
 }
 section .title {
     display: flex;
