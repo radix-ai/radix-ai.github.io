@@ -112,12 +112,10 @@ a.button.dark {
 /* Sections */
 
 section {
-    margin: 6rem 0;
-    padding: 1vw 0;
+    margin: 7rem 0;
 }
 section > .container > *:not(:first-child) {
-    margin-top: 6rem;
-    padding-top: 1vw 0;
+    margin-top: 7rem;
 }
 section .title {
     display: flex;
@@ -162,6 +160,9 @@ section h1 + hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* Negative 1rem margin from top and bottom. */
+    margin-top: 5rem;
+    margin-bottom: -2rem;
 }
 #team .people .person {
     display: flex;
@@ -211,18 +212,20 @@ section h1 + hr {
 .job.hide {
     max-height: 14em;
     overflow: hidden;
+    margin-bottom: -0.5em;
 }
-.job.hide::after {
+.job.hide > .fade-out {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 5em;
+    height: 5.5em;
     background: #fff;
     background: -moz-linear-gradient(top, #fff 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
     background: -webkit-linear-gradient(top, #fff 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, #fff 100%);
+    cursor: pointer;
 }
 .job h1 {
     opacity: 0.9;
@@ -248,14 +251,12 @@ section h1 + hr {
 /* Contact */
 
 #contact .coordinates {
-    /* border: 1px solid red; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 #contact .coordinates p:first-child {
     margin-bottom: 2em;
-    /* border: 1px solid green; */
 }
 #contact .coordinates p:first-child a {
     display: block;
