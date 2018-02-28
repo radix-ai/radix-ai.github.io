@@ -226,19 +226,18 @@ section h1 + hr {
     display: none;
 }
 .job > h1 {
+    display: inline;
     font-size: 2.2rem;
     font-weight: 300;
 }
-.job h1 span {
-    display: none;
-    opacity: 0.35;
-    margin-left: 1.4rem;
+.job > h1 span {
+    margin-right: 1rem;
 }
-.job h1 a {
+.job > h1 a {
     font-size: 1.7rem;
-    margin-left: 1.4rem;
+    display: inline-block;
 }
-.job h1 a i.fa {
+.job > h1 a i.fa {
     margin-left: 0.4em;
     font-size: 0.68em;
 }
