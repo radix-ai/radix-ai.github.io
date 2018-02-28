@@ -125,7 +125,7 @@ section .title h1 {
     display: inline-block;
     font-size: 2.8rem;
     font-weight: 300;
-    opacity: 0.22;
+    opacity: 0.35;
     margin-right: 0.5em;
 }
 section h1 + hr {
@@ -134,7 +134,7 @@ section h1 + hr {
     height: 1px;
     position: relative;
     top: 2px;
-    background: rgba(0, 0, 0, 0.11);
+    background: rgba(0, 0, 0, 0.22);
     border: none;
 }
 
@@ -160,7 +160,7 @@ section h1 + hr {
 #hero nav a { font-size: 2.2rem; }
 #tagline p { font-size: 2.8rem; }
 #c2a .contact { text-align: center; }
-#c2a .contact p { opacity: 0.3; margin-bottom: 0.5em; }
+#c2a .contact p { opacity: 0.45; margin-bottom: 0.5em; }
 
 /* About */
 
@@ -205,17 +205,17 @@ section h1 + hr {
 #team .people .person .name span {
     display: block;
 }
-#team .people .person .name span a { color: rgba(0, 0, 0, 0.2); }
+#team .people .person .name span a { color: rgba(0, 0, 0, 0.26); }
 #team .people .person .name span a:first-child i.fa { font-size: 0.85em; margin-right: 0.3rem; }
 #team .people .person .name span a:hover { color: #06f; }
 #team .people .person .name span:nth-child(2) {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.45);
 }
 .davio { background: url('img/davio.jpg'); }
 .florian { background: url('img/florian.jpg'); }
 .laurent { background: url('img/laurent.png'); }
 .thibault { background: url('img/thibault.jpg'); }
-.you { background: #ccc; color: white; }
+.you { background: rgba(0, 0, 0, 0.4); color: white; }
 
 /* Open positions */
 
