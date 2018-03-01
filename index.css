@@ -160,7 +160,7 @@ section h1 + hr {
 #hero nav a { font-size: 2.2rem; }
 #tagline p { font-size: 2.8rem; }
 #c2a .contact { text-align: center; }
-#c2a .contact p { opacity: 0.45; margin-bottom: 0.5em; }
+#c2a .contact p { opacity: 0.45; margin-bottom: 1em; }
 
 /* About */
 
