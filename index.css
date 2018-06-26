@@ -171,6 +171,7 @@ section h1 + hr {
 /* Team */
 
 #team .people {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -178,17 +179,65 @@ section h1 + hr {
     margin-top: -1rem;
     margin-bottom: -1rem;
 }
-#team .people .person {
+
+#team .people .slide {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#team .people .next {
+    position: absolute;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    right: -100px;
+    top: 35%;
+    opacity: .15;
+}
+
+#team .people .prev {
+    position: absolute;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    left: -100px;
+    top: 35%;
+    opacity: .15;
+}
+
+#team .people .dots {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#team .people .dots__item {
+    width: 15px;
+    height: 15px;
+    margin: 0 .5rem;
+    border: 0;
+    background-color: #ccc;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+}
+
+#team .people .dots__item--active {
+    background: #06f;
+}
+
+#team .people .slide .person {
     display: flex;
     align-items: center;
     width: 30rem;
     margin: 3rem 3%;
 }
 @media screen and (min-width: 850px) {
-    #team .people .person {
-        width: 34rem;
+    #team .people .slide .person {
+        width: 35rem;
     }
 }
+
 #team .people .person .photo {
     margin-right: 2rem;
     width: 91px;
@@ -215,6 +264,13 @@ section h1 + hr {
 .florian { background: url('img/florian.jpg'); }
 .laurent { background: url('img/laurent.png'); }
 .thibault { background: url('img/thibault.jpg'); }
+.corneliu { background: url('img/corneliu.jpg'); }
+.maarten { background: url('img/maarten.jpg'); }
+.bart { background: url('img/bart.jpg'); }
+.tanguy { background: url('img/tanguy.jpg'); }
+.rodolphe { background: url('img/rodolphe.jpg'); }
+.enias { background: url('img/enias.jpeg'); }
+.bac { background: url('img/bac.jpeg'); }
 .you { background: rgba(0, 0, 0, 0.4); color: white; }
 
 /* Open positions */
