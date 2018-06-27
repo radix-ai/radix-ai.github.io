@@ -185,6 +185,17 @@ section h1 + hr {
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1000px) {
+    #team .people .next, #team .people .prev {
+        display: none !important;
+    }
+}
+@media screen and (min-width: 1000px) {
+    #team .people .dots {
+        display: none !important;
+    }
+}
+
 #team .people .next {
     position: absolute;
     cursor: pointer;
@@ -232,6 +243,7 @@ section h1 + hr {
     width: 30rem;
     margin: 3rem 3%;
 }
+
 @media screen and (min-width: 850px) {
     #team .people .slide .person {
         width: 35rem;

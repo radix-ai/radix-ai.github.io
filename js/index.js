@@ -40,30 +40,26 @@ class SiemaWithDots extends Siema {
     }
 }
 
-mySiema = null;
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    mySiema = new SiemaWithDots({
-        perPage: 1, 
-        multipleDrag: false,
-        onInit: function(){
-            this.addDots();
-            this.updateDots();
-        },
-        onChange: function(){
-            this.updateDots()
-        },
-    });
-}else{
-    mySiema = new Siema({
-        perPage: 1, 
-        multipleDrag: false,
-    });
-}
+mySiema = new SiemaWithDots({
+    perPage: 1, 
+    multipleDrag: false,
+    onInit: function(){
+        this.addDots();
+        this.updateDots();
+    },
+    onChange: function(){
+        this.updateDots()
+    },
+});
 
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 prev.addEventListener('click', () => mySiema.prev());
 next.addEventListener('click', () => mySiema.next());
+
+
+
+
 
 
     
