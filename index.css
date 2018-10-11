@@ -268,7 +268,10 @@ section h1 + hr {
 }
 #team .people .person .name span a { color: rgba(0, 0, 0, 0.26); }
 #team .people .person .name span a:first-child i.fa { font-size: 0.85em; margin-right: 0.3rem; }
-#team .people .person .name span a:hover { color: #06f; }
+#team .people .person .name span a:hover { 
+    color: #06f;
+    text-decoration: None;
+}
 #team .people .person .name span:nth-child(2) {
     color: rgba(0, 0, 0, 0.45);
 }
@@ -283,9 +286,11 @@ section h1 + hr {
 .rodolphe { background: url('img/rodolphe.jpg'); }
 .enias { background: url('img/enias.jpeg'); }
 .bac { background: url('img/bac.jpeg'); }
+.clement { background: url('img/clement.jpg'); }
 .you { background: rgba(0, 0, 0, 0.4); color: white; }
 
 /* Open positions */
+
 
 .jobs .job:not(:first-child) {
     margin-top: 2.4em;
