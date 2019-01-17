@@ -1,210 +1,414 @@
 <!doctype html>
 <html lang="en">
-    <head>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
+<head>
 
-        <title>radix.ai - Accelerating Machine Learning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300:latin" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400:latin" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600:latin" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:600&text=RADIX" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:200&text=.AI" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="index.css">
+    <title>radix.ai - Accelerating Machine Learning</title>
 
-        <!-- Search Engine -->
-        <meta name="description" content="We accelerate the pace at which Machine Learning innovations are turned into reality.">
-        <meta name="image" content="https://radix.ai/img/radix-ai-square-white-on-blue.png">
-        <!-- Schema.org for Google -->
-        <meta itemprop="name" content="radix.ai">
-        <meta itemprop="description" content="We accelerate the pace at which Machine Learning innovations are turned into reality.">
-        <meta itemprop="image" content="https://radix.ai/img/radix-ai-square-white-on-blue.png">
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="radix.ai">
-        <meta name="twitter:description" content="We accelerate the pace at which Machine Learning innovations are turned into reality.">
-        <meta name="twitter:site" content="@radix_ai">
-        <meta name="twitter:creator" content="@radix_ai">
-        <meta name="twitter:image:src" content="https://radix.ai/img/radix-ai-square-white-on-blue.png">
-        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-        <meta name="og:title" content="radix.ai">
-        <meta name="og:description" content="We accelerate the pace at which Machine Learning innovations are turned into reality.">
-        <meta name="og:image" content="https://radix.ai/img/radix-ai-square-white-on-blue.png">
-        <meta name="og:url" content="https://radix.ai">
-        <meta name="og:site_name" content="radix.ai">
-        <meta name="og:type" content="website">
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link rel="manifest" href="favicon/site.webmanifest">
-        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#0066ff">
-        <link rel="shortcut icon" href="favicon/favicon.ico">
-        <meta name="msapplication-TileColor" content="#0066ff">
-        <meta name="msapplication-config" content="favicon/browserconfig.xml">
-        <meta name="theme-color" content="#0066ff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300:latin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400:latin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600:latin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:600&text=RADIX" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:200&text=.AI" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css?v=2">
 
-    </head>
-    <body>
+    <!-- Search Engine -->
+    <meta name="description" content="We accelerate the pace at which Machine Learning innovations are turned into reality.">
+    <meta name="image" content="https://radix.ai/img/radix-ai-square-white-on-blue.png">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="radix.ai">
+    <meta itemprop="description" content="We accelerate the pace at which Machine Learning innovations are turned into reality.">
+    <meta itemprop="image" content="https://radix.ai/img/radix-ai-square-white-on-blue.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="radix.ai">
+    <meta name="twitter:description" content="We accelerate the pace at which Machine Learning innovations are turned into reality.">
+    <meta name="twitter:site" content="@radix_ai">
+    <meta name="twitter:creator" content="@radix_ai">
+    <meta name="twitter:image:src" content="https://radix.ai/img/radix-ai-square-white-on-blue.png">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="radix.ai">
+    <meta name="og:description" content="We accelerate the pace at which Machine Learning innovations are turned into reality.">
+    <meta name="og:image" content="https://radix.ai/img/radix-ai-square-white-on-blue.png">
+    <meta name="og:url" content="https://radix.ai">
+    <meta name="og:site_name" content="radix.ai">
+    <meta name="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#0066ff">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#0066ff">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#0066ff">
 
-        <section id="hero">
+</head>
+
+<body>
+
+    <section id="hero">
         <div class="container">
             <div>
                 <a class="logo" href="https://radix.ai">radix<span>.ai</span></a>
             </div>
         </div>
-        </section>
+    </section>
 
-        <section id="tagline">
+    <section id="tagline">
         <div class="container">
             <p>We accelerate the pace at which Machine Learning innovations are turned into reality.</p>
         </div>
-        </section>
+    </section>
 
-        <section id="c2a">
+    <section id="c2a">
         <div class="container">
             <div class="contact">
                 <p>
                     Need a Machine Learning solution?
                 </p>
-                <a class="button" href="mailto:hello@radix.ai"><i class="fa fa-send"></i>Contact us</a>
+                <a class="button" href="mailto:hello@radix.ai">
+                    <i class="fa fa-send"></i>Contact us</a>
             </div>
         </div>
-        </section>
+    </section>
 
-        <section id="about">
-            <div class="container">
-                <div class="title">
-                    <h1>Who we are</h1><hr>
-                </div>
-                <div class="description">
-                    <p><a class="logo" href="https://radix.ai">radix<span>.ai</span></a> is a Belgium-based Machine Learning company.</p>
-                    <p>Our mission is to <emph>accelerate</emph> the pace at which Machine Learning innovations are turned into reality.</p>    
-                    <p>We help <emph>big companies</emph> such as Atlas Copco and Brussels Airport, <emph>research institutes</emph> such as Imec, <emph>public companies</emph> such as VDAB, and <emph>startups<emph>.</p>
-                    <p>Our core tools are Python, Scikit-learn, and TensorFlow, yet our team are <emph>full-stack engineers</emph> well versed in all technologies for building end-to-end Machine Learning solutions.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="team">
+    <section id="about">
         <div class="container">
             <div class="title">
-                <h1>Meet the team</h1><hr>
+                <h1>Who we are</h1>
+                <hr>
+            </div>
+            <div class="description">
+                <p>
+                    <a class="logo" href="https://radix.ai">radix<span>.ai</span></a> is a Belgium-based Machine Learning company.</p>
+                <p>Our mission is to
+                    <emph>accelerate</emph> the pace at which Machine Learning innovations are turned into reality.</p>
+                <p>We help
+                    <emph>big companies</emph> such as Atlas Copco and Brussels Airport,
+                    <emph>research institutes</emph> such as Imec,
+                    <emph>public companies</emph> such as VDAB, and
+                    <emph>startups
+                        <emph>.</p>
+                <p>Our core tools are Python, Scikit-learn, and TensorFlow, yet our team are
+                    <emph>full-stack engineers</emph> well versed in all technologies for building end-to-end Machine Learning
+                    solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="title">
+                <h1>Meet the team</h1>
+                <hr>
             </div>
             <div class="people">
-                <div class="person">
-                    <div class="photo glimmer davio"></div>
-                    <div class="name">
-                        <span>Davio Larnout</span>
-                        <span>Business Lead</span>
-                        <span>
-                            <a href="mailto:davio@radix.ai"><i class="fa fa-fw fa-envelope"></i></a>
-                            <a href="https://be.linkedin.com/in/daviolarnout"><i class="fa fa-fw fa-linkedin"></i></a>
-                            <a href="https://twitter.com/daviolarnout"><i class="fa fa-fw fa-twitter"></i></a>
-                            <a href="https://github.com/dlarnout"><i class="fa fa-fw fa-github"></i></a>
-                        </span>
+                <div class="siema">
+                    <div class="slide">
+                        <div class="person">
+                            <div class="photo glimmer davio"></div>
+                            <div class="name">
+                                <span>Davio Larnout</span>
+                                <span>Business Lead</span>
+                                <span>
+                                    <a href="mailto:davio@radix.ai">
+                                        <i class="fa fa-fw fa-envelope"></i>
+                                    </a>
+                                    <a href="https://be.linkedin.com/in/daviolarnout">
+                                        <i class="fa fa-fw fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://twitter.com/daviolarnout">
+                                        <i class="fa fa-fw fa-twitter"></i>
+                                    </a>
+                                    <a href="https://github.com/dlarnout">
+                                        <i class="fa fa-fw fa-github"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo glimmer florian"></div>
+                            <div class="name">
+                                <span>Florian Goossens</span>
+                                <span>Project Lead</span>
+                                <span>
+                                    <a href="mailto:florian@radix.ai">
+                                        <i class="fa fa-fw fa-envelope"></i>
+                                    </a>
+                                    <a href="https://be.linkedin.com/in/floriangoossens">
+                                        <i class="fa fa-fw fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://twitter.com/FlorianGoossens">
+                                        <i class="fa fa-fw fa-twitter"></i>
+                                    </a>
+                                    <a href="https://github.com/floriango">
+                                        <i class="fa fa-fw fa-github"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo glimmer laurent"></div>
+                            <div class="name">
+                                <span>Laurent Sorber, PhD.</span>
+                                <span>Technical Lead</span>
+                                <span>
+                                    <a href="mailto:laurent@radix.ai">
+                                        <i class="fa fa-fw fa-envelope"></i>
+                                    </a>
+                                    <a href="https://be.linkedin.com/in/laurentsorber">
+                                        <i class="fa fa-fw fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://twitter.com/laurentsorber">
+                                        <i class="fa fa-fw fa-twitter"></i>
+                                    </a>
+                                    <a href="https://github.com/lsorber">
+                                        <i class="fa fa-fw fa-github"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo glimmer thibault"></div>
+                            <div class="name">
+                                <span>Thibault Verhoeven, PhD.</span>
+                                <span>Machine Learning Engineer</span>
+                                <span>
+                                    <a href="mailto:thibault@radix.ai">
+                                        <i class="fa fa-fw fa-envelope"></i>
+                                    </a>
+                                    <a href="https://be.linkedin.com/in/thibault-verhoeven-349ba036">
+                                        <i class="fa fa-fw fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://twitter.com/verhoeven_th">
+                                        <i class="fa fa-fw fa-twitter"></i>
+                                    </a>
+                                    <a href="https://github.com/twverhoe">
+                                        <i class="fa fa-fw fa-github"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="person">
+                            <div class="photo glimmer corneliu"></div>
+                            <div class="name">
+                                <span>Corneliu Cofaru, PhD.</span>
+                                <span>Sr. Machine Learning Engineer</span>
+                                <span>
+                                    <a href="mailto:corneliu@radix.ai">
+                                        <i class="fa fa-fw fa-envelope"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/corneliu-cofaru-62b8a71b/">
+                                        <i class="fa fa-fw fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/zgornel">
+                                        <i class="fa fa-fw fa-github"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo glimmer maarten"></div>
+                            <div class="name">
+                                <span>Maarten Huijsmans</span>
+                                <span>Sr. Software Engineer</span>
+                                <span>
+                                    <a href="mailto:maarten@radix.ai">
+                                        <i class="fa fa-fw fa-envelope"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/mhuijsmans/">
+                                        <i class="fa fa-fw fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/lukin0110">
+                                        <i class="fa fa-fw fa-github"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo glimmer tanguy"></div>
+                            <div class="name">
+                                <span>Tanguy Naets</span>
+                                <span>Machine Learning Engineer</span>
+                                <span>
+                                    <a href="mailto:tanguy@radix.ai">
+                                        <i class="fa fa-fw fa-envelope"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/tanguynaets/">
+                                        <i class="fa fa-fw fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/tanguyNaets">
+                                        <i class="fa fa-fw fa-github"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo glimmer rodolphe"></div>
+                            <div class="name">
+                                <span>Rodolphe Cambier</span>
+                                <span>Machine Learning Engineer</span>
+                                <span>
+                                    <a href="mailto:rodolphe@radix.ai">
+                                        <i class="fa fa-fw fa-envelope"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/rodolphecambier/">
+                                        <i class="fa fa-fw fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/RCambier">
+                                        <i class="fa fa-fw fa-github"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="person">
+                            <div class="photo glimmer enias"></div>
+                            <div class="name">
+                                <span>Enias Cailliau</span>
+                                <span>Machine Learning Engineer</span>
+                                <span>
+                                    <a href="mailto:enias@radix.ai">
+                                        <i class="fa fa-fw fa-envelope"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/eniascailliau/">
+                                        <i class="fa fa-fw fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://twitter.com/ECailliau">
+                                        <i class="fa fa-fw fa-twitter"></i>
+                                    </a>
+                                    <a href="https://github.com/EniasCailliau">
+                                        <i class="fa fa-fw fa-github"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo glimmer bac"></div>
+                            <div class="name">
+                                <span>Bac Nguyen</span>
+                                <span>Machine Learning Engineer</span>
+                                <span>
+                                    <a href="mailto:bac@radix.ai">
+                                        <i class="fa fa-fw fa-envelope"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/bac-nguyen-cong-ab8908124/">
+                                        <i class="fa fa-fw fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/bacnguyencong">
+                                        <i class="fa fa-fw fa-github"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="photo glimmer clement"></div>
+                            <div class="name">
+                                <span>Clément Ntwari Nshuti</span>
+                                <span>Machine Learning Engineer</span>
+                                <span>
+                                    <a href="mailto:clement@radix.ai">
+                                        <i class="fa fa-fw fa-envelope"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/cl%C3%A9ment-ntwari-nshuti-a2593742/">
+                                        <i class="fa fa-fw fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/cnnshuti">
+                                        <i class="fa fa-fw fa-github"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="person">
-                    <div class="photo glimmer florian"></div>
-                    <div class="name">
-                        <span>Florian Goossens</span>
-                        <span>Sales Engineer</span>
-                        <span>
-                            <a href="mailto:florian@radix.ai"><i class="fa fa-fw fa-envelope"></i></a>
-                            <a href="https://be.linkedin.com/in/floriangoossens"><i class="fa fa-fw fa-linkedin"></i></a>
-                            <a href="https://twitter.com/FlorianGoossens"><i class="fa fa-fw fa-twitter"></i></a>
-                            <a href="https://github.com/floriango"><i class="fa fa-fw fa-github"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <div class="person">
-                    <div class="photo glimmer laurent"></div>
-                    <div class="name">
-                        <span>Laurent Sorber</span>
-                        <span>Technical Lead</span>
-                        <span>
-                            <a href="mailto:laurent@radix.ai"><i class="fa fa-fw fa-envelope"></i></a>
-                            <a href="https://be.linkedin.com/in/laurentsorber"><i class="fa fa-fw fa-linkedin"></i></a>
-                            <a href="https://twitter.com/laurentsorber"><i class="fa fa-fw fa-twitter"></i></a>
-                            <a href="https://github.com/lsorber"><i class="fa fa-fw fa-github"></i></a>
-                        </span>
-                    </div>
-                </div>
-                <div class="person">
-                    <div class="photo glimmer thibault"></div>
-                    <div class="name">
-                        <span>Thibault Verhoeven</span>
-                        <span>Machine Learning Engineer</span>
-                        <span>
-                            <a href="mailto:thibault@radix.ai"><i class="fa fa-fw fa-envelope"></i></a>
-                            <a href="https://be.linkedin.com/in/thibault-verhoeven-349ba036"><i class="fa fa-fw fa-linkedin"></i></a>
-                            <a href="https://twitter.com/verhoeven_th"><i class="fa fa-fw fa-twitter"></i></a>
-                            <a href="https://github.com/twverhoe"><i class="fa fa-fw fa-github"></i></a>
-                        </span>
-                    </div>
-                </div>
+                <img class="next" src="img/next.png"> </img>
+                <img class="prev" src="img/prev.png"> </img>
             </div>
         </div>
-        </section>
+    </section>
 
-        <section id="jobs">
+    <section id="jobs">
         <div class="container">
             <div class="title">
-                <h1>Job openings</h1><hr>
+                <h1>Job openings</h1>
+                <hr>
             </div>
             <div class="jobs">
-            <div class="job hide">
-                <h1><span>Machine Learning Engineer</span><a href="#jobs" onclick="this.parentNode.parentNode.classList.toggle('hide'); return false;">Read more<i class="fa fa-chevron-right"></i></a></h1>
-                <div class="description">
+                <div class="job hide">
+                    <h1>
+                        <span>Front End Engineer</span>
+                        <a href="#jobs" onclick="this.parentNode.parentNode.classList.toggle('hide'); return false;">Read more
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </h1>
+                    <div class="description">
 
-                    <h2>What you'll do</h2>
-                    <p>You will work with our team of engineers to design, implement and deploy end-to-end Machine Learning solutions for ourselves and our clients. You’ll have the opportunity to work on challenging and rewarding problems, including:</p>
-                    <ul>
-                        <li>Building and deploying reproducible and scalable training pipelines.</li>
-                        <li>Distributing training across GPUs and nodes with data and model parallelism.</li>
-                        <li>Sequentially reading natural language with Deep Learning.</li>
-                        <li>Developing Machine Learning-based search algorithms.</li>
-                        <li>Scaling Machine Learning models to thousands of users.</li>
-                        <li>Designing Machine Learning models to run on mobile devices.</li>
-                    </ul>
+                        <h2>What you'll do</h2>
+                        <p>At RADIX.AI, we are devoted to bringing the latest advances in Machine Learning to the world. Everything we do needs to be beautifully designed, both on the inside, and the outside. As we are growing strongly, we are now looking for someone who can be committed full-time to the outside part. Concretely, some of the things you will be responsible for are:</p>
+                        <ul>
+                            <li>Shape our identity by owning the front-end side of our AI products.</li>
+                            <li>Create AI-powered tools which are dead simple to use, yet convey elegance and quality.</li>
+                            <li>Display data-rich content in a clear manner.</li>
+                            <li>Set up reproducible front-end projects from scratch.</li>
+                            <li>Create customer scenarios.</li>
+                            <li>Test, measure & validate your own creations.</li>
+                            <li>Delete two features for every new feature added.</li>
+                        </ul>
 
-                    <h2>Your qualifications</h2>
+                        <h2>Your qualifications</h2>
+                        <p>Since you will be in full control of how our clients experience AI, you’ll need the following qualifications:</p>
+                        
+                        <ul>
+                            <li>You are confident in your Software Engineering skills.</li>
+                            <li>You have a strong opinion on what good UI/UX looks and feels like.</li>
+                            <li>You have a bachelor in Computer Science or a similar field.</li>
+                            <li>You can read the mind of our end users.</li>
+                            <li>You have delivered at least one real-life project.</li>
+                        </ul>
 
-                    <ul>
-                        <li>You are confident in your Software Engineering skills.</li>
-                        <li>You are deeply interested in Machine Learning and Artificial Intelligence.</li>
-                        <li>You have a master's or Ph.D. in Computer Science or a similar field.</li>
-                        <li>You have delivered at least one real-life project.</li>
-                    </ul>
+                        <h2>Your technology stack</h2>
+                        
+                        <p>Frond-end:</p>
 
-                    <h2>Your technology stack</h2>
+                        <ul>
+                            <li>You know how to set up a project with 
+                                <a href="https://www.npmjs.com/">npm</a> and 
+                                <a href="https://nodejs.org/en/"> nodejs</a>.</li>
+                            <li>You have worked with 
+                                <a href="https://vuejs.org/">Vue.js</a>,
+                                 <a href="https://reactjs.org/">React</a> or 
+                                 <a href="https://angular.io/">Angular</a> (in order of preference).
+                            <li>You're quick with 
+                                <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> and quicker with <a href="https://sass-lang.com/">Sass</a>
+                        </ul>
 
-                    <ul>
-                        <li>You have mastered the SciPy stack (<a href="https://pandas.pydata.org/pandas-docs/stable/10min.html">pandas</a>, <a href="https://docs.scipy.org/doc/numpy-dev/user/quickstart.html">numpy</a>, <a href="http://scikit-learn.org/stable/user_guide.html">scikit-learn</a>).</li>
-                        <li>You know your way around source control and reproducibility tooling (<a href="https://git-scm.com/book">git</a>, <a href="https://conda.io/docs/user-guide/getting-started.html">conda</a>, <a href="https://docs.python.org/3/installing/index.html">pip</a>, <a href="https://docs.docker.com/get-started/">docker</a>).</li>
-                        <li>Experience with Deep Learning frameworks (<a href="https://www.tensorflow.org/">TensorFlow</a>, <a href="http://pytorch.org/">PyTorch</a>), and parallel computing libraries (<a href="https://dask.pydata.org/en/latest/">dask</a>, <a href="https://numba.pydata.org/">numba</a>) is a plus.</li>
-                    </ul>
+                        <h2>Benefits &amp; Perks</h2>
 
-                    <h2>Benefits &amp; Perks</h2>
+                        <ul>
+                            <li>A competitive salary with a great package of extra benefits.</li>
+                            <li>Full healthcare benefits plan and group insurance.</li>
+                            <li>Your own MacBook Pro and an IT budget to spend as you like.</li>
+                            <li>A cool office in Brussels next to the central station.</li>
+                            <li>Frequent happy hours and team events to never forget!</li>
+                            <li>Work with a great team of passionate people in a startup environment.</li>
+                            <li>A unique opportunity to be part of, and learn from, one of the best teams in the field.</li>
+                            <li>A steep and continuous learning curve.</li>
 
-                    <ul>
-                        <li>A competitive salary with a great package of extra benefits.</li>
-                        <li>Full healthcare benefits plan and group insurance.</li>
-                        <li>Your own MacBook Pro and an IT budget to spend as you like.</li>
-                        <li>A cool office in Brussels next to the central station.</li>
-                        <li>Frequent happy hours and team events to never forget!</li>
-                        <li>Work with a great team of passionate people in a startup environment.</li>
-                        <li>A unique opportunity to be part of, and learn from, one of the best teams in the field.</li>
-                        <li>A steep and continuous learning curve to become an expert Machine Learning Engineer.</li>
+                        </ul>
 
-                    </ul>
-
+                    </div>
                 </div>
             </div>
            
@@ -237,7 +441,7 @@
                     <ul>
                         <li>You are skilled in Software Engineering with Python and have a strong grasp on source control and reproducibility tooling (<a href="https://git-scm.com/book">git</a>, <a href="https://conda.io/docs/user-guide/getting-started.html">conda</a>, <a href="https://docs.python.org/3/installing/index.html">pip</a>, <a href="https://docs.docker.com/get-started/">docker</a>).</li>
                         <li>You know your way around web development frameworks (e.g. <a href="http://flask.pocoo.org/">flask</a>,<a href="https://www.djangoproject.com/">django</a>).</li>
-                        <li>You have a good overview of platforms and services that support production systems and know their advantages and disadvantages (e.g. <a href="https://aws.amazon.com/s3/">aws s3</a> vs <a href="https://www.mongodb.com/cloud/atlas/aws-mongodb">aws MongoDB</a>)
+                        <li>You have a good overview of platforms and services that support production systems and know their advantages and disadvantages (e.g. <a href="https://aws.amazon.com/s3/">aws s3</a> vs <a href="https://www.mongodb.com/cloud/atlas/aws-mongodb">aws MongoDB</a>)</li>
                         <li>You master software design patterns and architecture design.</li>
                         <li>Experience with parallel computing libraries (<a href="https://dask.pydata.org/en/latest/">dask</a>, <a href="https://numba.pydata.org/">numba</a>) and the SciPy stack (<a href="https://pandas.pydata.org/pandas-docs/stable/10min.html">pandas</a>, <a href="https://docs.scipy.org/doc/numpy-dev/user/quickstart.html">numpy</a>, <a href="http://scikit-learn.org/stable/user_guide.html">scikit-learn</a>) is a plus.</li>
                     </ul>
@@ -253,54 +457,143 @@
                         <li>Work with a great team of passionate people in a startup environment.</li>
                         <li>A unique opportunity to be part of, and learn from, one of the best teams in the field.</li>
                         <li>A continuous learning curve to become an expert Software Engineer.</li>
-                    </ul>
+                    </ul>        
+            
+                <div class="job hide">
+                    <h1>
+                        <span>Machine Learning Engineer</span>
+                        <a href="#jobs" onclick="this.parentNode.parentNode.classList.toggle('hide'); return false;">Read more
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </h1>
+                    <div class="description">
 
+                        <h2>What you'll do</h2>
+                        <p>You will work with our team of engineers to design, implement and deploy end-to-end Machine Learning
+                            solutions for ourselves and our clients. You’ll have the opportunity to work on challenging and
+                            rewarding problems, including:</p>
+                        <ul>
+                            <li>Building and deploying reproducible and scalable training pipelines.</li>
+                            <li>Distributing training across GPUs and nodes with data and model parallelism.</li>
+                            <li>Sequentially reading natural language with Deep Learning.</li>
+                            <li>Developing Machine Learning-based search algorithms.</li>
+                            <li>Scaling Machine Learning models to thousands of users.</li>
+                            <li>Designing Machine Learning models to run on mobile devices.</li>
+                        </ul>
+
+                        <h2>Your qualifications</h2>
+
+                        <ul>
+                            <li>You are confident in your Software Engineering skills.</li>
+                            <li>You are deeply interested in Machine Learning and Artificial Intelligence.</li>
+                            <li>You have a master's or Ph.D. in Computer Science or a similar field.</li>
+                            <li>You have delivered at least one real-life project.</li>
+                        </ul>
+
+                        <h2>Your technology stack</h2>
+
+                        <ul>
+                            <li>You have mastered the SciPy stack (
+                                <a href="https://pandas.pydata.org/pandas-docs/stable/10min.html">pandas</a>,
+                                <a href="https://docs.scipy.org/doc/numpy-dev/user/quickstart.html">numpy</a>,
+                                <a href="http://scikit-learn.org/stable/user_guide.html">scikit-learn</a>).</li>
+                            <li>You know your way around source control and reproducibility tooling (
+                                <a href="https://git-scm.com/book">git</a>,
+                                <a href="https://conda.io/docs/user-guide/getting-started.html">conda</a>,
+                                <a href="https://docs.python.org/3/installing/index.html">pip</a>,
+                                <a href="https://docs.docker.com/get-started/">docker</a>).</li>
+                            <li>Experience with Deep Learning frameworks (
+                                <a href="https://www.tensorflow.org/">TensorFlow</a>,
+                                <a href="http://pytorch.org/">PyTorch</a>), and parallel computing libraries (
+                                <a href="https://dask.pydata.org/en/latest/">dask</a>,
+                                <a href="https://numba.pydata.org/">numba</a>) is a plus.</li>
+                        </ul>
+
+                        <h2>Benefits &amp; Perks</h2>
+
+                        <ul>
+                            <li>A competitive salary with a great package of extra benefits.</li>
+                            <li>Full healthcare benefits plan and group insurance.</li>
+                            <li>Your own MacBook Pro and an IT budget to spend as you like.</li>
+                            <li>A cool office in Brussels next to the central station.</li>
+                            <li>Frequent happy hours and team events to never forget!</li>
+                            <li>Work with a great team of passionate people in a startup environment.</li>
+                            <li>A unique opportunity to be part of, and learn from, one of the best teams in the field.</li>
+                            <li>A steep and continuous learning curve to become an expert Machine Learning Engineer.</li>
+
+                        </ul>
+
+                    </div>
                 </div>
-            </div>
-            <div class="job hide">
-                <h1><span>Senior Machine Learning Engineer</span><a href="#jobs" onclick="this.parentNode.parentNode.classList.toggle('hide'); return false;">Read more<i class="fa fa-chevron-right"></i></a></h1>
-                <div class="description">
+                <div class="job hide">
+                    <h1>
+                        <span>Python Software Engineer</span>
+                        <a href="#jobs" onclick="this.parentNode.parentNode.classList.toggle('hide'); return false;">Read more
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </h1>
+                    <div class="description">
 
-                    <h2>What you'll do</h2>
-                    <p>You will work with our team of engineers to design, implement and deploy end-to-end Machine Learning solutions for ourselves and our clients. You’ll have the opportunity to work on challenging and rewarding problems, including:</p>
-                    <ul>
-                        <li>Building and deploying reproducible and scalable training pipelines.</li>
-                        <li>Distributing training across GPUs and nodes with data and model parallelism.</li>
-                        <li>Sequentially reading natural language with Deep Learning.</li>
-                        <li>Developing Machine Learning-based search algorithms.</li>
-                        <li>Scaling Machine Learning models to thousands of users.</li>
-                        <li>Designing Machine Learning models to run on mobile devices.</li>
-                    </ul>
+                        <h2>What you'll do</h2>
+                        <p>You will work with our team of engineers to design, implement and deploy end-to-end Machine Learning
+                            solutions for ourselves and our clients. You’ll have the opportunity to work on challenging and
+                            rewarding problems, including:</p>
+                        <ul>
+                            <li>Designing and implementing APIs to expose Machine Learning services.</li>
+                            <li>Developing build, test, and deploy automation pipelines.</li>
+                            <li>Promoting good Software Engineering practices to the team.</li>
+                            <li>Building and deploying reproducible and scalable training pipelines.</li>
+                            <li>Distributing training across GPUs and nodes with data and model parallelism.</li>
+                            <li>Scaling Machine Learning models to thousands of users.</li>
+                        </ul>
 
-                    <h2>Your qualifications</h2>
+                        <h2>Your qualifications</h2>
 
-                    <ul>
-                        <li>You are confident in your Software Engineering skills.</li>
-                        <li>You are deeply interested in Machine Learning and Artificial Intelligence.</li>
-                        <li>You have a master's or Ph.D. in Computer Science or a similar field.</li>
-                        <li>You have delivered several real-life projects.</li>
-                    </ul>
+                        <ul>
+                            <li>You consider yourself an excellent Software Engineer.</li>
+                            <li>You have a keen interest in Machine Learning and Artificial Intelligence.</li>
+                            <li>You have a master’s or Ph.D. in Computer Science or a similar field.</li>
+                            <li>You have delivered at least one real-life project.</li>
+                        </ul>
 
-                    <h2>Your technology stack</h2>
+                        <h2>Your technology stack</h2>
 
-                    <ul>
-                        <li>You are intimately familiar the SciPy stack (<a href="https://pandas.pydata.org/pandas-docs/stable/10min.html">pandas</a>, <a href="https://docs.scipy.org/doc/numpy-dev/user/quickstart.html">numpy</a>, <a href="http://scikit-learn.org/stable/user_guide.html">scikit-learn</a>).</li>
-                        <li>You are skilled at  source control and reproducibility tooling (<a href="https://git-scm.com/book">git</a>, <a href="https://conda.io/docs/user-guide/getting-started.html">conda</a>, <a href="https://docs.python.org/3/installing/index.html">pip</a>, <a href="https://docs.docker.com/get-started/">docker</a>).</li>
-                        <li>You have significant experience with Deep Learning frameworks (<a href="https://www.tensorflow.org/">TensorFlow</a>, <a href="http://pytorch.org/">PyTorch</a>), and parallel computing libraries (<a href="https://dask.pydata.org/en/latest/">dask</a>, <a href="https://numba.pydata.org/">numba</a>) is a plus.</li>
-                    </ul>
+                        <ul>
+                            <li>You are skilled in Software Engineering with Python and have a strong grasp on source control
+                                and reproducibility tooling (
+                                <a href="https://git-scm.com/book">git</a>,
+                                <a href="https://conda.io/docs/user-guide/getting-started.html">conda</a>,
+                                <a href="https://docs.python.org/3/installing/index.html">pip</a>,
+                                <a href="https://docs.docker.com/get-started/">docker</a>).</li>
+                            <li>You know your way around the API and web development frameworks (
+                                <a href="http://flask.pocoo.org/">flask</a>,
+                                <a href="http://click.pocoo.org/">click</a>,
+                                <a href="http://www.hug.rest/">hug</a>) and the SciPy stack (
+                                <a href="https://pandas.pydata.org/pandas-docs/stable/10min.html">pandas</a>,
+                                <a href="https://docs.scipy.org/doc/numpy-dev/user/quickstart.html">numpy</a>,
+                                <a href="http://scikit-learn.org/stable/user_guide.html">scikit-learn</a>).</li>
+                            <li>Experience with Asynchronous I/O (
+                                <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a>), Deep Learning frameworks (
+                                <a href="https://www.tensorflow.org/">TensorFlow</a>,
+                                <a href="http://pytorch.org/">PyTorch</a>), and parallel computing libraries (
+                                <a href="https://dask.pydata.org/en/latest/">dask</a>,
+                                <a href="https://numba.pydata.org/">numba</a>) is a plus.</li>
+                        </ul>
 
-                    <h2>Benefits &amp; Perks</h2>
+                        <h2>Benefits &amp; Perks</h2>
 
-                    <ul>
-                        <li>A competitive salary with a great package of extra benefits.</li>
-                        <li>Full healthcare benefits plan and group insurance.</li>
-                        <li>Your own MacBook Pro and an IT budget to spend as you like.</li>
-                        <li>A cool office in Brussels next to the central station.</li>
-                        <li>Frequent happy hours and team events to never forget!</li>
-                        <li>Work with a great team of passionate people in a startup environment.</li>
-                        <li>A chance to work with the best in the field.</li>
-                    </ul>
+                        <ul>
+                            <li>A competitive salary with a great package of extra benefits.</li>
+                            <li>Full healthcare benefits plan and group insurance.</li>
+                            <li>Your own MacBook Pro and an IT budget to spend as you like.</li>
+                            <li>A cool office in Brussels next to the central station.</li>
+                            <li>Frequent happy hours and team events to never forget!</li>
+                            <li>Work with a great team of passionate people in a startup environment.</li>
+                            <li>A unique opportunity to be part of, and learn from, one of the best teams in the field.</li>
+                            <li>A steep and continuous learning curve to become an expert Machine Learning Engineer.</li>
+                        </ul>
 
+                    </div>
                 </div>
             </div>
             <div class="job hide">
@@ -333,7 +626,7 @@
                     <ul>
                         <li>You are skilled in Software Engineering with Python and have a strong grasp on source control and reproducibility tooling (<a href="https://git-scm.com/book">git</a>, <a href="https://conda.io/docs/user-guide/getting-started.html">conda</a>, <a href="https://docs.python.org/3/installing/index.html">pip</a>, <a href="https://docs.docker.com/get-started/">docker</a>).</li>
                         <li>You know your way around web development frameworks (e.g. <a href="http://flask.pocoo.org/">flask</a>,<a href="https://www.djangoproject.com/">django</a>).</li>
-                        <li>You have a good overview of platforms and services that support production systems and know their advantages and disadvantages (e.g. <a href="https://aws.amazon.com/s3/">aws s3</a> vs <a href="https://www.mongodb.com/cloud/atlas/aws-mongodb">aws MongoDB</a>)
+                        <li>You have a good overview of platforms and services that support production systems and know their advantages and disadvantages (e.g. <a href="https://aws.amazon.com/s3/">aws s3</a> vs <a href="https://www.mongodb.com/cloud/atlas/aws-mongodb">aws MongoDB</a>)</li>
                         <li>You master software design patterns and architecture design.</li>
                         <li>Experience with parallel computing libraries (<a href="https://dask.pydata.org/en/latest/">dask</a>, <a href="https://numba.pydata.org/">numba</a>) and the SciPy stack (<a href="https://pandas.pydata.org/pandas-docs/stable/10min.html">pandas</a>, <a href="https://docs.scipy.org/doc/numpy-dev/user/quickstart.html">numpy</a>, <a href="http://scikit-learn.org/stable/user_guide.html">scikit-learn</a>) is a plus.</li>
                     </ul>
@@ -350,41 +643,212 @@
                         <li>A unique opportunity to be part of, and learn from, one of the best teams in the field.</li>
                         <li>A continuous learning curve to become an expert Software Engineer.</li>
                     </ul>
+                <div class="job hide">
+                    <h1>
+                        <span>Senior Machine Learning Engineer</span>
+                        <a href="#jobs" onclick="this.parentNode.parentNode.classList.toggle('hide'); return false;">Read more
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </h1>
+                    <div class="description">
 
+                        <h2>What you'll do</h2>
+                        <p>You will work with our team of engineers to design, implement and deploy end-to-end Machine Learning
+                            solutions for ourselves and our clients. You’ll have the opportunity to work on challenging and
+                            rewarding problems, including:</p>
+                        <ul>
+                            <li>Building and deploying reproducible and scalable training pipelines.</li>
+                            <li>Distributing training across GPUs and nodes with data and model parallelism.</li>
+                            <li>Sequentially reading natural language with Deep Learning.</li>
+                            <li>Developing Machine Learning-based search algorithms.</li>
+                            <li>Scaling Machine Learning models to thousands of users.</li>
+                            <li>Designing Machine Learning models to run on mobile devices.</li>
+                        </ul>
+
+                        <h2>Your qualifications</h2>
+
+                        <ul>
+                            <li>You are confident in your Software Engineering skills.</li>
+                            <li>You are an expert in Machine Learning and Artificial Intelligence.</li>
+                            <li>You have a master's or Ph.D. in Computer Science or a similar field.</li>
+                            <li>You have delivered several real-life projects.</li>
+                            <li>You are experienced at solutioning Machine Learning projects.</li>
+                        </ul>
+
+                        <h2>Your technology stack</h2>
+
+                        <ul>
+                            <li>You are intimately familiar the SciPy stack (
+                                <a href="https://pandas.pydata.org/pandas-docs/stable/10min.html">pandas</a>,
+                                <a href="https://docs.scipy.org/doc/numpy-dev/user/quickstart.html">numpy</a>,
+                                <a href="http://scikit-learn.org/stable/user_guide.html">scikit-learn</a>).</li>
+                            <li>You are skilled at source control and reproducibility tooling (
+                                <a href="https://git-scm.com/book">git</a>,
+                                <a href="https://conda.io/docs/user-guide/getting-started.html">conda</a>,
+                                <a href="https://docs.python.org/3/installing/index.html">pip</a>,
+                                <a href="https://docs.docker.com/get-started/">docker</a>).</li>
+                            <li>You have significant experience with Deep Learning frameworks (
+                                <a href="https://www.tensorflow.org/">TensorFlow</a>,
+                                <a href="http://pytorch.org/">PyTorch</a>), and parallel computing libraries (
+                                <a href="https://dask.pydata.org/en/latest/">dask</a>,
+                                <a href="https://numba.pydata.org/">numba</a>) is a plus.</li>
+                        </ul>
+
+                        <h2>Benefits &amp; Perks</h2>
+
+                        <ul>
+                            <li>A competitive salary with a great package of extra benefits.</li>
+                            <li>Full healthcare benefits plan and group insurance.</li>
+                            <li>Your own MacBook Pro and an IT budget to spend as you like.</li>
+                            <li>A cool office in Brussels next to the central station.</li>
+                            <li>Frequent happy hours and team events to never forget!</li>
+                            <li>Work with a great team of passionate people in a startup environment.</li>
+                            <li>A chance to work with the best in the field.</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="job hide">
+                    <h1>
+                        <span>Senior Python Software Engineer</span>
+                        <a href="#jobs" onclick="this.parentNode.parentNode.classList.toggle('hide'); return false;">Read more
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </h1>
+                    <div class="description">
+
+                        <h2>What you'll do</h2>
+                        <p>You will work with our team of engineers to design, implement and deploy end-to-end Machine Learning
+                            solutions for ourselves and our clients. You’ll have the opportunity to work on challenging and
+                            rewarding problems, including:</p>
+                        <ul>
+                            <li>Designing and implementing APIs to expose Machine Learning services.</li>
+                            <li>Developing build, test, and deploy automation pipelines.</li>
+                            <li>Promoting good Software Engineering practices to the team.</li>
+                            <li>Building and deploying reproducible and scalable training pipelines.</li>
+                            <li>Distributing training across GPUs and nodes with data and model parallelism.</li>
+                            <li>Scaling Machine Learning models to thousands of users.</li>
+                        </ul>
+
+                        <h2>Your qualifications</h2>
+
+                        <ul>
+                            <li>You consider yourself an excellent Software Engineer.</li>
+                            <li>You have a keen interest in Machine Learning and Artificial Intelligence.</li>
+                            <li>You have a master’s or Ph.D. in Computer Science or a similar field.</li>
+                            <li>You have delivered several real-life projects.</li>
+                            <li>You are experienced at solutioning SaaS projects.</li>
+                        </ul>
+
+                        <h2>Your technology stack</h2>
+
+                        <ul>
+                            <li>You are an expert in Software Engineering with Python and have a strong grasp on source control
+                                and reproducibility tooling (
+                                <a href="https://git-scm.com/book">git</a>,
+                                <a href="https://conda.io/docs/user-guide/getting-started.html">conda</a>,
+                                <a href="https://docs.python.org/3/installing/index.html">pip</a>,
+                                <a href="https://docs.docker.com/get-started/">docker</a>).</li>
+                            <li>You know your way around the API and web development frameworks (
+                                <a href="http://flask.pocoo.org/">flask</a>,
+                                <a href="http://click.pocoo.org/">click</a>,
+                                <a href="http://www.hug.rest/">hug</a>) and the SciPy stack (
+                                <a href="https://pandas.pydata.org/pandas-docs/stable/10min.html">pandas</a>,
+                                <a href="https://docs.scipy.org/doc/numpy-dev/user/quickstart.html">numpy</a>,
+                                <a href="http://scikit-learn.org/stable/user_guide.html">scikit-learn</a>).</li>
+                            <li>Experience with Asynchronous I/O (
+                                <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a>), Deep Learning frameworks (
+                                <a href="https://www.tensorflow.org/">TensorFlow</a>,
+                                <a href="http://pytorch.org/">PyTorch</a>), and parallel computing libraries (
+                                <a href="https://dask.pydata.org/en/latest/">dask</a>,
+                                <a href="https://numba.pydata.org/">numba</a>) is a plus.</li>
+                        </ul>
+
+                        <h2>Benefits &amp; Perks</h2>
+
+                        <ul>
+                            <li>A competitive salary with a great package of extra benefits.</li>
+                            <li>Full healthcare benefits plan and group insurance.</li>
+                            <li>Your own MacBook Pro and an IT budget to spend as you like.</li>
+                            <li>A cool office in Brussels next to the central station.</li>
+                            <li>Frequent happy hours and team events to never forget!</li>
+                            <li>Work with a great team of passionate people in a startup environment.</li>
+                            <li>A chance to work with the best in the field.</li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
-        </section>
-        
-        <section id="contact">
+    </section>
+
+    <section id="blog">
         <div class="container">
             <div class="title">
-                <h1>Coordinates</h1><hr>
+                <h1> Blog </h1>
+                <hr>
             </div>
-            <div class="coordinates">
-            <p>
-                <a href="mailto:hello@radix.ai"><i class="fa fa-fw fa-envelope"></i>hello@radix.ai</a>
-                <a href="tel:+32499379597"><i class="fa fa-fw fa-phone"></i>+32 (0)499 37 95 97</a>
-                <a href="https://twitter.com/radix_ai"><i class="fa fa-fw fa-twitter"></i>@radix_ai</a>
-                <a href="https://www.linkedin.com/company/radix-ai/"><i class="fa fa-fw fa-linkedin"></i>radix-ai</a>
-                <a href="https://github.com/radix-ai"><i class="fa fa-fw fa-github"></i>radix-ai</a>
-            </p>
-            <p>
-                <a class="logo" href="https://radix.ai">radix<span>.ai</span></a><br>
-                Co.Station Brussel<br> <a href="https://goo.gl/maps/gQyv1UFY1xm">Parvis Sainte-Gudule 5, 1000 Brussel</a><br>
-                VAT BE 0660.746.974
-            </p>
+            <div class="description">
+                <p>
+                    Follow our adventures on <a href="https://medium.com/radix-ai-blog">Medium</a>.
+                </p>
             </div>
         </div>
-        </section>
+    </section>
 
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-108277215-1','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <section id="contact">
+        <div class="container">
+            <div class="title">
+                <h1>Coordinates</h1>
+                <hr>
+            </div>
+            <div class="coordinates">
+                <p>
+                    <a href="mailto:hello@radix.ai">
+                        <i class="fa fa-fw fa-envelope"></i>hello@radix.ai</a>
+                    <a href="tel:+32499379597">
+                        <i class="fa fa-fw fa-phone"></i>+32 (0)499 37 95 97</a>
+                    <a href="https://twitter.com/radix_ai">
+                        <i class="fa fa-fw fa-twitter"></i>@radix_ai</a>
+                    <a href="https://www.linkedin.com/company/radix-ai/">
+                        <i class="fa fa-fw fa-linkedin"></i>radix-ai</a>
+                    <a href="https://github.com/radix-ai">
+                        <i class="fa fa-fw fa-github"></i>radix-ai</a>
+                </p>
+                <p>
+                    <a class="logo" href="https://radix.ai">radix<span>.ai</span></a>
+                    <br> BeCentral
+                    <br>
+                    <a href="https://goo.gl/maps/tRByrfwNX5A2">Cantersteen 10, 1000 Brussels</a>
+                    <br> VAT BE 0660.746.974
+                </p>
+            </div>
+        </div>
+    </section>
 
-    </body>
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-108277215-1', 'auto'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <script src="js/siema.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="2130690650548116" theme_color="#0066ff" logged_in_greeting="Hi! We're here to answer any questions you may have."
+        logged_out_greeting="Hi! We're here to answer any questions you may have.">
+    </div>
+
+</body>
+
 </html>
-
