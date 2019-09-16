@@ -138,6 +138,23 @@ section h1 + hr {
     border: none;
 }
 
+/* Next-gen */
+
+#nextgen {
+    color: white;
+    background: #06f;
+    padding: 2em 0;
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
+    position: sticky;
+}
+#nextgen p {
+    margin: 0.5em 0;
+    font-size: 1.15em;
+}
+#nextgen p:first-child {
+    font-weight: 500;
+}
+
 /* Hero */
 
 #hero {
